@@ -6,7 +6,7 @@
 <%= link_to task.title, task_path(task) %>
 
 <p><%= task.completed ? "✅" : '❌'%></p>
-<%= link_to "☠", delete_task_path(task), method: :delete, data: { confirm: "are you sure?"}  %>
+<%= link_to "☠", task_path(task), method: :delete, data: { confirm: "are you sure?"}  %>
 <hr>
 
 
